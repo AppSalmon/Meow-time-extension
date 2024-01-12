@@ -1,0 +1,22 @@
+{
+  "name": "Meow Time",
+  "version": "1.0.1",
+  "description": "Kỉ luật bản thân với Meow Time để tránh lãng phí thời gian vì mạng xã hội!",
+  "manifest_version": 3,
+  "icons": {
+    "16": "Logo_Social_Detox.png",
+    "32": "Logo_Social_Detox.png",
+    "48": "Logo_Social_Detox.png",
+    "128": "Logo_Social_Detox.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/", "https://*.facebook.com/*", "https://*.tiktok.com/*", "https://*.instagram.com/*", "https://*.twitter.com/*"],
+      "css": ["CSS/style.css"],
+      "js": ["js/custom.js"]
+    }
+  ]
+}
